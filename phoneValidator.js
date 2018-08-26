@@ -6,8 +6,14 @@ function telephoneCheck(str) {
 	// - Sets can be separated by spaces, hyphens, or nothing
 	// 		- But first sets can only be separated by hyphens if last two sets are?
 	let regex = /^(1[ -]?)?\d{3}.*[ -]?\d{3}[ -]?\d{4}$/;
-	console.log(str.match(regex));
-	return regex.test(str);
+	
+	let parenRe = /^(\((?=\d{3}\)))?\d{3}((?<=\(\d{3})\))?$/;
+	let parenStr = "(555)";
+	console.log(parenStr.match(parenRe));
+	return parenRe.test(parenStr);
+	
+	// console.log(str.match(regex));
+	// return regex.test(str);
 }
 
 console.log(telephoneCheck("555-555 5555"));
