@@ -6,3 +6,7 @@
 .form-row {
 	margin: auto;
 }
+
+#feedback {
+	height: 24px;
+}
