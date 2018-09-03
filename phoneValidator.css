@@ -1,0 +1,8 @@
+.container-fluid > .row {
+	height: 100vh;
+	text-align: center;
+}
+
+.form-row {
+	margin: auto;
+}
